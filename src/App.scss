@@ -1,0 +1,119 @@
+// colors
+$primary-container: #F4EEEE;
+$secondary-container: #CD5888;
+$text: #070707;
+$text-box: #96C291;
+$input-box: rgba(236, 234, 235, 0.669);
+
+// font-family
+$font-style: 'Pacifico', cursive;
+
+
+
+@mixin flex-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body{
+  width: 100%;
+  height: fit-content;
+  background-color: $primary-container;
+  @include flex-col();
+  font-family: $font-style;
+
+}
+
+.App {
+text-align: center;
+@include flex-col;
+}
+
+.section{
+  @include flex-col;
+}
+
+.section-container{
+  width: 90%;
+  padding: 10%;
+  font-size: 20px;
+}
+
+.section-head {
+  padding: 9px 26px;
+  border: none;
+  border-radius: 30px;
+  font-family: $font-style;
+  font-size: 22px;
+  background-color: $text-box;
+  color: $text;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.form-container {
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(219, 64, 118, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  margin-bottom: 164px;
+}
+
+.form {
+  background-color: $secondary-container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $text;
+  height: 420px;
+  width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.form h3 {
+  padding: 20px;
+  font-weight: 500px;
+  font-size: 35px;
+}
+
+.form input,
+.form textarea {
+  margin: 5px 10px;
+  width: 530px;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: $input-box;
+  border-radius: 8px;
+
+}
+
+.form button {
+  width: 120px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: $input-box;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 10px;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 30px;
+  font-family: $font-style;
+  font-size: 17px;
+  background-color: $text-box;
+  color: $text;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  outline: none;
+}

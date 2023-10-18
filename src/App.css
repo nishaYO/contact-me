@@ -1,0 +1,110 @@
+body {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #F4EEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Pacifico", cursive;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-container {
+  width: 90%;
+  padding: 10%;
+  font-size: 20px;
+}
+
+.section-head {
+  padding: 9px 26px;
+  border: none;
+  border-radius: 30px;
+  font-family: "Pacifico", cursive;
+  font-size: 22px;
+  background-color: #96C291;
+  color: #070707;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form-container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgba(219, 64, 118, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  margin-bottom: 164px;
+}
+
+.form {
+  background-color: #CD5888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #070707;
+  height: 420px;
+  width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.form h3 {
+  padding: 20px;
+  font-weight: 500px;
+  font-size: 35px;
+}
+
+.form input,
+.form textarea {
+  margin: 5px 10px;
+  width: 530px;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: rgba(236, 234, 235, 0.669);
+  border-radius: 8px;
+}
+
+.form button {
+  width: 120px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgba(236, 234, 235, 0.669);
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 10px;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 30px;
+  font-family: "Pacifico", cursive;
+  font-size: 17px;
+  background-color: #96C291;
+  color: #070707;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  outline: none;
+}/*# sourceMappingURL=App.css.map */
