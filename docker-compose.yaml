@@ -1,0 +1,32 @@
+version: '1.0.0'
+services:
+  contact-client:
+    image: contact-client-image
+    ports:
+      - '3000:3000'
+    networks:
+      - my-mern-network
+    depends_on:
+      - contact-server
+  contact-server:
+    image: contact-server-image
+    environment:
+      - MONGO_URI=<URI string>
+    ports:
+      - '5000:5000'
+    networks:
+      - my-mern-network
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=<username>
+      - MONGO_INITDB_ROOT_PASSWORD=<password>
+    ports:
+      - '27017:27017'
+    networks:
+      - my-mern-network
+networks:
+  my-mern-network:
+    external: true
