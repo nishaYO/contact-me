@@ -10,8 +10,8 @@ services:
       - contact-server
   contact-server:
     image: contact-server-image
-    environment:
-      - MONGO_URI=<URI string>
+    env_file:
+      - .env
     ports:
       - '5000:5000'
     networks:
@@ -20,9 +20,8 @@ services:
       - mongo
   mongo:
     image: mongo
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=<username>
-      - MONGO_INITDB_ROOT_PASSWORD=<password>
+    env_file:
+      - .env
     ports:
       - '27017:27017'
     networks:
